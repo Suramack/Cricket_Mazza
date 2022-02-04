@@ -1,6 +1,7 @@
 import 'package:cricket_mazza/Home/components/title.dart';
 import 'package:cricket_mazza/Home/home/home.dart';
 import 'package:cricket_mazza/Home/recent_matches/recent_matches.dart';
+import 'package:cricket_mazza/Live_Line/home.dart';
 import 'package:cricket_mazza/Matches/home.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -14,14 +15,14 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   Titles titles = Titles();
-  int bottomNavigationbarActiveIndex = 1;
+  int bottomNavigationbarActiveIndex = 2;
   List<Widget> bodyContent = const [
     // Text('Home'),
-    // RecentMatches(),
     Home(),
     Matches(),
     // Text('Matches'),
-    Text('Live'),
+    // Text('Live'),
+    LiveMatch(),
     Text('Settings'),
     Text('Profile'),
   ];

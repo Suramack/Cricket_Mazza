@@ -89,7 +89,8 @@ class _FeaturedVideosState extends State<FeaturedVideos> {
                                         top: Radius.circular(10),
                                       ),
                                       child: Image.asset(
-                                        featuredVideoDetails.thumbnail[index],
+                                        featuredVideoDetails
+                                            .featureVideoThumbnail[index],
                                         fit: BoxFit.cover,
                                       ),
                                     ),
